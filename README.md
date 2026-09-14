@@ -36,11 +36,11 @@ claimId,patientId,providerId,diagnosisCode,claimAmount
 ## Run locally
 
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.batch.job.name=financeRiskJob --app.jobs.finance.input=file:./samples/finance-transactions.csv --app.jobs.finance.output=file:./build/finance-screened.csv"
+./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.main.web-application-type=none --spring.batch.job.enabled=true --spring.batch.job.name=financeRiskJob --app.jobs.finance.input=file:./samples/finance-transactions.csv --app.jobs.finance.output=file:./build/finance-screened.csv"
 ```
 
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.batch.job.name=healthcareClaimsJob --app.jobs.healthcare.input=file:./samples/healthcare-claims.csv --app.jobs.healthcare.output=file:./build/healthcare-prioritized.csv"
+./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.main.web-application-type=none --spring.batch.job.enabled=true --spring.batch.job.name=healthcareClaimsJob --app.jobs.healthcare.input=file:./samples/healthcare-claims.csv --app.jobs.healthcare.output=file:./build/healthcare-prioritized.csv"
 ```
 
 ## Build and test
