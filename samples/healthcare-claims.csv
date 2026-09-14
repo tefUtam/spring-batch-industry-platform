@@ -1,0 +1,3 @@
+claimId,patientId,providerId,diagnosisCode,claimAmount
+CLM-1001,PAT-2001,PRV-3001,e11.9,1200.00
+CLM-1002,PAT-2002,PRV-3002,i10,7200.00
